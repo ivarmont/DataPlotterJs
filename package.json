@@ -1,0 +1,25 @@
+{
+  "name": "datatable",
+  "version": "0.0.0",
+  "description": "reader and plotter of table data",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivarmont/DataPlotterJs.git"
+  },
+  "author": "Mauricio Montellano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivarmont/DataPlotterJs/issues"
+  },
+  "homepage": "https://github.com/ivarmont/DataPlotterJs#readme",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
