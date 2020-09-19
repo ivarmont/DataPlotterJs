@@ -4,7 +4,7 @@
   "description": "reader and plotter of table data",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
