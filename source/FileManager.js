@@ -1,11 +1,13 @@
 "use strict";
 
-function open(urlPath) {
-    fetch(urlPath).then(function (response) {
-        response.text().then(function (text) {
-            console.log(text)
-        });
-    });
-
+async function readCsv(urlPath) {
+    const response = await fetch(urlPath);
+    return response.text();
 }
-open("./source/resources/dataset.csv");
+
+async function convertToMatrix(urlPath){
+    const data = await readCsv(urlPath);
+    return $.csv.toArrays(data);
+}
+
+convertToMatrix("./source/resources/dataset.csv").then(response => console.log(response));
