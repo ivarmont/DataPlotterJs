@@ -16,10 +16,8 @@
     "url": "https://github.com/ivarmont/DataPlotterJs/issues"
   },
   "homepage": "https://github.com/ivarmont/DataPlotterJs#readme",
-  "dependencies": {
-    "jquery": "^3.5.1"
-  },
   "devDependencies": {
     "jest": "^26.4.2"
-  }
+  },
+  "dependencies": {}
 }

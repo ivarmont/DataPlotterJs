@@ -1,12 +1,11 @@
-var $ = require( "jquery" );
+"use strict";
 
-const open = (urlPath) => {
-
-    $.get(urlPath, function (data, status) {
-        console.log(status);
-        return data;    
+function open(urlPath) {
+    fetch(urlPath).then(function (response) {
+        response.text().then(function (text) {
+            console.log(text)
+        });
     });
 
 }
-
-module.exports = open;
+open("./source/resources/dataset.csv");

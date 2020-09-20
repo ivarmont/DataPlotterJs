@@ -1,7 +1,11 @@
-const open = require("../source/FileManager");
+"use strict";
+var fs = require('fs');
+const csvToArray = require("../source/FileManager").default;
 
-describe("open", () =>{
+describe("csvToArray", () =>{
+    var path =__dirname +'/resources/dataset.csv';
+    var content = fs.readFileSync(path, 'utf8');
     it("should open a file",()=>{
-        expect(open("./resources/dataset.csv")).not.toBe(null);
+        expect(csvToArray(content)).not.toBe(null);
     })    
 })
